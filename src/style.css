@@ -1,0 +1,116 @@
+.bg-custom1{
+   /* background-color: rgb(68, 160, 148); */
+   background-color: rgba(190, 67, 67, 0.849);
+}
+.container-fluid{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("mar.jpg") ;
+    background-size: cover;
+}
+
+.rowForma{
+    padding: 30px;
+    display: none;
+ /*   background: linear-gradient(to right, #d2bbbbd8, #536976da, #b1614dd7);  */
+}
+.rowFormaSB{
+    padding: 20px;
+}
+.input1{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.425);
+}
+.btn{
+    border-radius: 50px;
+
+}
+.btn-success{
+    background-color: rgba(71, 175, 106, 0.716);
+
+    margin-left: 7px;
+}
+.gridContainer{
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 1rem;
+    padding: 15px;
+}
+.gridContainer > div{
+    background-color: rgba(255, 255, 255, 0.027);
+    color: #fafafa;
+    text-align: center;
+    border-radius: 5px ;
+    padding: 30px;
+}
+.gridContainer > .item-1{
+    background-image: url("flamingo.jpg");
+    background-position: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 0px !important;
+}
+.imgContainerBlur{
+    background-color: rgba(0, 0, 0, 0.534);
+    border-radius: 5px ;
+    width: 100%;
+    height: 100%;
+}
+.item-1{
+    place-self: center;
+    width: 100%;
+}
+.item-1 > .imgContainerBlur > .imgContainer > img{
+    object-fit: cover;
+    width: 60%;
+}
+.rowFormaSB{
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: solid;
+    padding: 15px;
+/*	background: linear-gradient(to right, #d2bbbbf1, #536976f3, #b1614df5); */
+	color: rgba(255, 255, 255, 0.122);
+} 
+.rowFormaSB > .item-1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.searchBarInput{
+    background-color: rgba(255, 255, 255, 0.425);
+    border-radius: 5px;
+    border: none;  
+}.searchBarInput:focus{
+        background-color: rgba(3, 3, 3, 0.481);
+        color: rgb(255, 255, 255);
+    }
+
+.oracionProcesada{
+    color: rgba(255, 255, 255, 0.425);
+}
+
+@media screen and (max-width:800px){
+    .rowForma, .gridContainer, .rowFormaSB 
+    {
+        background: linear-gradient(to right, #bdc3c7e3, #000000e5); 
+
+    }
+    .gridContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.containerBlur, body{
+ /*   background: linear-gradient(to right, #d2bbbbec, #536976ef, #b1614de1); */
+ /*   background-color: rgba(30, 30, 30, 0.85); */
+ background: linear-gradient(to right, #d4d4d4b6, #536976ef, #000000e1);
+}
+.imageListContainer img:hover{
+    filter: invert();
+    cursor: zoom-in;
+}
